@@ -95,21 +95,60 @@
     </div>
   </nav>
 
-  <!-- Masthead -->
-  <header class="masthead">
-    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-      <div class="text-center">
-        <h1 class="mx-auto my-0 text-uppercase">Andrew Babes</h1>
+<!-- Masthead -->
+<header class="masthead">
+  <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+    <div class="text-center">
 
-        <!-- Rotating role line -->
-        <div class="text-white-50 rotating-wrap mx-auto">
-          I'm a <span id="rotatingRole" class="rotating-role">Infrastructure Engineer</span>.
-        </div>
+      <!-- Name -->
+      <h1 class="mx-auto my-0 text-uppercase" style="letter-spacing:1px;">
+        Andrew Babes
+      </h1>
 
-        <a class="btn btn-primary" href="#about">Learn More</a>
+      <!-- Rotating Role -->
+      <div class="text-white-50 rotating-wrap mx-auto mt-3">
+        I'm a 
+        <span id="rotatingRole" class="rotating-role">
+          Infrastructure Engineer
+        </span>
       </div>
+
+      <!-- Professional Tagline -->
+      <p class="text-white-50 mt-4 mb-3"
+         style="max-width:720px; margin:auto; font-size:1.05rem; line-height:1.8;">
+        Designing secure, modular, and automated cloud infrastructure 
+        grounded in real-world production architecture and reliability engineering principles.
+      </p>
+
+      <!-- Project Highlight Badge -->
+      <div style="margin-top:1.25rem;">
+        <a href="#projects"
+           style="
+             display:inline-block;
+             padding:0.5rem 1rem;
+             font-size:0.85rem;
+             border:1px solid rgba(255,255,255,0.4);
+             border-radius:999px;
+             color:white;
+             text-decoration:none;
+             transition:all 0.3s ease;
+           "
+           onmouseover="this.style.background='rgba(255,255,255,0.15)'"
+           onmouseout="this.style.background='transparent'">
+          Latest: Azure End-to-End Infrastructure Platform (Manual → Terraform)
+        </a>
+      </div>
+
+      <!-- CTA Button -->
+      <div class="mt-4">
+        <a class="btn btn-primary" href="#about">
+          Learn More
+        </a>
+      </div>
+
     </div>
-  </header>
+  </div>
+</header>
 
   <!-- About -->
   <section class="about-section text-center" id="about">
@@ -385,6 +424,48 @@
         <p class="text-white-50 small mb-0">
           Security leadership certifications (CISSP/CCSP/CISM) will be added later after deeper production exposure.
         </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects-section bg-light" id="skills">
+    <div class="container px-4 px-lg-5">
+      <div class="text-center mb-4">
+        <h2>Technical Skills</h2>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-4">
+          <h5>Cloud & Infrastructure</h5>
+          <ul>
+            <li>Microsoft Azure</li>
+            <li>Virtual Networking (VNet, NSG, Subnets)</li>
+            <li>RBAC & Managed Identities</li>
+            <li>Azure Monitor & Log Analytics</li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h5>Infrastructure as Code</h5>
+          <ul>
+            <li>Terraform (Modular Design)</li>
+            <li>Remote State Management</li>
+            <li>Environment Isolation</li>
+            <li>Infrastructure Automation</li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h5>Systems & Operations</h5>
+          <ul>
+            <li>Linux Administration</li>
+            <li>Networking Fundamentals</li>
+            <li>Data Center Hardware</li>
+            <li>Monitoring & Alerting</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </section>

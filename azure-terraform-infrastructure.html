@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Azure Infrastructure Platform Project" />
+  <meta name="author" content="Andrew Babes" />
+  <title>Azure Infrastructure Platform | Andrew Babes</title>
+
+  <!-- Same favicon path format as homepage -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+  <!-- Font Awesome (same as homepage) -->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts (same as homepage) -->
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+
+  <!-- Theme CSS (same as homepage) -->
+  <link href="css/styles.css" rel="stylesheet" />
+
+  <style>
+    /* Keep masthead text centered nicely (same as homepage helper) */
+    .masthead h2 {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 720px;
+    }
+  </style>
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation (same structure as homepage; links point back to homepage sections) -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="index.html#page-top">Andrew Babes</a>
+
+      <button class="navbar-toggler navbar-toggler-right" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+              aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Masthead (background color/image comes from css/styles.css .masthead, same as homepage) -->
+  <header class="masthead">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+      <div class="text-center">
+
+        <h1 class="mx-auto my-0 text-uppercase"style="letter-spacing:1px; font-size:3.5rem;">
+            Azure Infrastructure Platform
+        </h1>
+
+        <p class="text-white-50 mt-4 mb-3"
+           style="max-width:720px; margin:auto; font-size:1.05rem; line-height:1.8;">
+          End-to-end Azure environment built manually for validation and
+          rebuilt using modular Terraform for repeatable, production-style deployment.
+        </p>
+
+        <div class="mt-4">
+          <a class="btn btn-primary"
+             href="https://github.com/Babes2345/azure-e2e-iac-manual"
+             target="_blank" rel="noopener">
+            View on GitHub
+          </a>
+          <a class="btn btn-outline-light ms-3"
+             href="index.html#projects">
+            Back to Projects
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Architecture Section -->
+  <section class="about-section text-center" id="architecture">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-9">
+          <h2 class="text-white mb-4">Architecture Overview</h2>
+
+          <!-- Per your requirement (no ../) -->
+          <img src="assets/img/azure-architecture.png"
+               alt="Azure Infrastructure Architecture Diagram"
+               class="img-fluid rounded mb-4" />
+
+          <p class="text-white-50">
+            The design follows a platform-first architecture separating networking, identity,
+            monitoring, and workload components. Network segmentation and RBAC boundaries
+            were validated before automation to ensure production-grade posture.
+          </p>
+
+          <p class="text-white-50">
+            Core components include segmented VNets, deny-by-default NSGs, managed identities,
+            centralized Log Analytics, and Azure Monitor alerting integrated from the start.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Terraform Section -->
+  <section class="projects-section bg-light" id="terraform">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-9">
+
+          <h2 class="mb-4 text-center">Terraform Implementation</h2>
+
+          <p class="text-muted text-center">
+            After manual validation, infrastructure was rebuilt using modular Terraform
+            with remote state and environment isolation.
+          </p>
+
+<pre class="mt-4">
+azure-e2e-iac-manual/
+├── backend.tf
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── modules/
+│   ├── networking/
+│   ├── monitoring/
+│   ├── identity/
+│   └── workload/
+└── environments/
+    ├── dev/
+    └── prod/
+</pre>
+
+          <ul class="mt-4">
+            <li>Reusable modular design</li>
+            <li>Remote state stored in Azure Storage</li>
+            <li>Environment separation (dev / prod)</li>
+            <li>Governance tagging standards</li>
+            <li>Drift reduction through repeatable deployment</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security & Monitoring -->
+  <section class="projects-section bg-black" id="security">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-9 text-center">
+
+          <h2 class="text-white mb-4">Security &amp; Observability</h2>
+
+          <p class="text-white-50">
+            Security and monitoring were designed as first-class architectural components.
+            Least-privilege RBAC, managed identities, and centralized audit logging were
+            implemented before automation.
+          </p>
+
+          <p class="text-white-50">
+            Azure Monitor, Log Analytics, and alerting workflows provide operational
+            visibility and readiness for CI/CD integration.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact -->
+  <section class="projects-section bg-light" id="impact">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-9 text-center">
+
+          <h2 class="mb-4">Operational Impact</h2>
+
+          <ul class="text-muted text-start">
+            <li>Eliminates infrastructure drift</li>
+            <li>Reduces provisioning time</li>
+            <li>Improves governance visibility</li>
+            <li>Prepares foundation for CI/CD workflows</li>
+            <li>Demonstrates architecture-first cloud engineering</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (same as homepage) -->
+  <section class="contact-section bg-black">
+    <div class="container px-4 px-lg-5">
+      <div class="social d-flex justify-content-center">
+        <a class="mx-3" href="https://www.linkedin.com/in/andrew-babes-5794711a4/" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a class="mx-3" href="https://github.com/Babes2345/" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer bg-black small text-center text-white-50">
+    <div class="container px-4 px-lg-5">
+      © 2026 Andrew Babes · Built with GitHub Pages
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Theme JS (same as homepage) -->
+  <script src="js/scripts.js"></script>
+</body>
+</html>
