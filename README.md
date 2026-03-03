@@ -7,7 +7,7 @@ This repository backs my **GitHub Pages portfolio website**, where projects, lab
 
 ---
 
-## 🌐 Portfolio Website
+## Portfolio Website
 
 🔗 **Live Site**  
 [View Portfolio Website](https://babes2345.github.io/AndrewBabes/)
@@ -15,7 +15,7 @@ This repository backs my **GitHub Pages portfolio website**, where projects, lab
 
 ---
 
-## 🎯 Career Focus
+## Career Focus
 
 I am focused on growing into senior-level roles such as:
 
@@ -28,7 +28,7 @@ My emphasis is on **building, operating, automating, and securing systems at sca
 
 ---
 
-## 🧰 Core Technologies & Skills
+## Core Technologies & Skills
 
 - **Cloud:** Microsoft Azure (primary), AWS (secondary)
 - **Infrastructure as Code:** Terraform, Azure Bicep / ARM
@@ -43,55 +43,55 @@ My emphasis is on **building, operating, automating, and securing systems at sca
 
 ---
 
-## 📜 Certifications
+## Certifications
 
-### ✅ Completed
+### Completed
 
-- **AZ-900** – Microsoft Azure Fundamentals  
-- **AZ-104** – Microsoft Azure Administrator  
+- **AZ-900** - Microsoft Azure Fundamentals  
+- **AZ-104** - Microsoft Azure Administrator  
 
 ---
 
-### 🔜 Planned (Next 2–3 Years)
+### Planned (Next 2-3 Years)
 
 This roadmap is intentionally **limited and high-impact**, aligned directly with production infrastructure and platform engineering work.
 
 #### Infrastructure & Platform
-- **AZ-305** – Azure Solutions Architect *(high priority)*
-- **CCNA** – Cisco Certified Network Associate
-- **Linux Certification** – RHCSA or equivalent
-- **Terraform Associate** – HashiCorp
+- **AZ-305** - Azure Solutions Architect *(high priority)*
+- **CCNA** - Cisco Certified Network Associate
+- **Linux Certification** - RHCSA or equivalent
+- **Terraform Associate** - HashiCorp
 
 #### DevOps & Reliability
-- **AZ-400** – Azure DevOps Engineer *(infrastructure-focused)*
-- **Kubernetes** – CKA or AKS-focused mastery
+- **AZ-400** - Azure DevOps Engineer *(infrastructure-focused)*
+- **Kubernetes** - CKA or AKS-focused mastery
 
 #### Architecture
-- **CITA-A** – IASA Associate Architect
-- **TOGAF** – Enterprise Architecture Framework
+- **CITA-A** - IASA Associate Architect
+- **TOGAF** - Enterprise Architecture Framework
 
 > Security leadership certifications (CISSP, CCSP, CISM) are planned **later**, after deeper production and architectural experience is established.
 
 ---
 
-## 💻 Projects & Labs
+##  Projects & Labs
 
 This portfolio emphasizes **applied engineering**, not theory.
 
 Representative projects include:
 
-### 🔹 Azure Infrastructure Platform
+###  Azure Infrastructure Platform
 - Secure Azure landing zone design
 - VNets, subnets, routing, NSGs
 - Linux workloads
 - Infrastructure-as-Code using Terraform and Azure Bicep
 
-### 🔹 Kubernetes Platform (AKS)
+###  Kubernetes Platform (AKS)
 - Cluster deployment and hardening
 - RBAC and namespace isolation
 - Ingress, monitoring, and reliability patterns
 
-### 🔹 Automation & Operations
+###  Automation & Operations
 - PowerShell and Python automation
 - CI/CD pipelines for infrastructure
 - Operational documentation and runbooks
